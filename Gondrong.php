@@ -1,15 +1,15 @@
 <?php
 ///////////////////////////////////////////
-///////CREATED BY Gondrong////////
-//////www.facebook.com/gondrong///////
-/////https://github.com/gondrongafri//////
+///////CREATED BY ARUDJI HERMATYAR////////
+//////www.facebook.com/bantalku567///////
+/////https://github.com/arudji1211//////
 ///////////////////////////////////////
 
 include 'tri_req.php';
 
 $tri = new tri();
 $imei = "868880043302499";
-echo "Masukkan No Telepon cuk, Gondrong menunggu : ";
+echo "Masukkan No Telepon : ";
 $msisdn = trim(fgets(STDIN));
 $otp = $tri->request_otp($msisdn,$imei);
 echo $otp[1] . "\r\n";
