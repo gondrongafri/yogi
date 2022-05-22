@@ -21,7 +21,7 @@ echo "\e[97m:::::::\e[92mcOWMMMMMMMMWx\e[97m::::\e[92mxWMMMMMMMMWOc\e[97m:::::::
 echo "\e[97m:::::::::\e[92mckXMMMMMMMx\e[97m::::\e[92mxMMMMMMMXkc\e[97m:::::::::\n";
 echo "\e[97m::::::::::::\e[92mlxOKX0d\e[97m::::::\e[92md0XKOxl\e[97m::::::::::::\n";
 echo "\e[97m::::::::::::::::::::::::::::::::::::::::::::\n";
-echo color("greenyellow","▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n");
+echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n");
 echo color("white","[•]  Time  : ".date("l, Y-m-d H:i:s")."   \n");
 echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n");
 echo color("white","[•]              Gondrong      \n");
@@ -30,7 +30,7 @@ function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         ulang:
-        echo color("nevy","(•) Nomer Cok 62 : ");
+        echo color("nevy","(•) Nomere Cok +62 : ");
         $no = trim(fgets(STDIN));
         $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$no.'","signed_up_country":"ID"}';
         $register = request("/v5/customers", null, $data);
