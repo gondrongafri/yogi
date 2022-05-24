@@ -52,7 +52,7 @@ function change(){
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
         echo color("red","===========(REDEEM VOUCHER)===========");
-        echo "\n".color("yellow","!] Claim voc GORIDE 8K");
+        echo "\n".color("yellow","!] Claim voc GORIDE GOCAR");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -66,7 +66,7 @@ function change(){
         }else{
         echo "\n".color("red","-] Message: ".$message);
         gocar:
-        echo "\n".color("yellow","!] Claim voc GOFOOD 15+10+5");
+        echo "\n".color("yellow","!] Claim voc GOFOOD");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -80,7 +80,7 @@ function change(){
         }else{
         echo "\n".color("red","-] Message: ".$message);
         reff:
-        $data = '{"referral_code":"G-75SR565"}';    
+        $data = '{"referral_code":"GOPULSA5"}';    
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
@@ -90,7 +90,7 @@ function change(){
         echo "\n".color("red","-] Message: ".$message);
         }
         gofood:
-        echo "\n".color("yellow","!] Claim voc GOCAR pot 14K");
+        echo "\n".color("yellow","!] Subscribe Afri's Tutorial");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
