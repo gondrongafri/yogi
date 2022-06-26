@@ -114,7 +114,7 @@ $nama = nama();
 						echo color("white",".");
 						sleep(1);
 					}
-					$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+					$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"WEEKENDPAY"}');
 					$message = fetch_value($code1,'"message":"','"');
 					if (strpos($code1, 'Promo kamu sudah bisa dipakai.')) {
 						echo "\n".color("green","Message: ".$message);
@@ -128,7 +128,7 @@ $nama = nama();
 							echo color("white",".");
 							sleep(1);
 						}
-						$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
+						$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COCACOLARP1"}');
 						$message = fetch_value($code1,'"message":"','"');
 						echo "\n".color("white","Message: ".$message);
 						echo "\n".color("white","REFRESH..");
@@ -225,8 +225,8 @@ $nama = nama();
 							$pilih1 = trim(fgets(STDIN));
 							if ($pilih1 == "y" || $pilih1 == "Y") {
 							//if($pilih1 == "y" && strpos($no, "628")){
-								echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN MU = 048049 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-								$data2 = '{"pin":"048049"}';
+								echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN MU = 112233 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+								$data2 = '{"pin":"112233"}';
 								$getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
 								echo "Otp pin: ";
 								$otpsetpin = trim(fgets(STDIN));
