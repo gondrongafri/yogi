@@ -55,7 +55,7 @@ echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
 $nama = nama();
 	$email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-	echo color("white","NOMOR: ");
+	echo color("white","Nomor Pake 62: ");
 	// $no = trim(fgets(STDIN));
 	$nohp = trim(fgets(STDIN));
 	$nohp = str_replace("62","62",$nohp);
@@ -100,7 +100,7 @@ $nama = nama();
 					echo color("white",".");
 					sleep(1);
 				}
-				$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKINAJA"}');
+				$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOBILLS10"}');
 				$message = fetch_value($code1,'"message":"','"');
 				if (strpos($code1, 'Promo kamu sudah bisa dipakai')) {
 					echo "\n".color("green","Message: ".$message);
@@ -114,7 +114,7 @@ $nama = nama();
 						echo color("white",".");
 						sleep(1);
 					}
-					$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"WEEKENDPAY"}');
+					$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOSENDHEMAT"}');
 					$message = fetch_value($code1,'"message":"','"');
 					if (strpos($code1, 'Promo kamu sudah bisa dipakai.')) {
 						echo "\n".color("green","Message: ".$message);
@@ -128,7 +128,7 @@ $nama = nama();
 							echo color("white",".");
 							sleep(1);
 						}
-						$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COCACOLARP1"}');
+						$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKINAJA"}');
 						$message = fetch_value($code1,'"message":"','"');
 						echo "\n".color("white","Message: ".$message);
 						echo "\n".color("white","REFRESH..");
@@ -138,7 +138,7 @@ $nama = nama();
 							sleep(1);
 						}
 						sleep(3);
-						$boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+						$boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKINAJA"}');
 						$messageboba09 = fetch_value($boba09,'"message":"','"');
 						echo "\n".color("white","Message: ".$messageboba09);
 						sleep(1);
