@@ -95,4 +95,44 @@ function fetch_value($str,$find_start,$find_end) {
 	$end    = strpos(substr($str,$start +$length),$find_end);
 	return trim(substr($str,$start +$length,$end));
 }
+function hari_ini(){
+	$hari = date ("D");
+ 
+	switch($hari){
+		case 'Sun':
+			$hari_ini = "MINGGU";
+		break;
+ 
+		case 'Mon':			
+			$hari_ini = "SENIN";
+		break;
+ 
+		case 'Tue':
+			$hari_ini = "SELASA";
+		break;
+ 
+		case 'Wed':
+			$hari_ini = "RABU";
+		break;
+ 
+		case 'Thu':
+			$hari_ini = "KAMIS";
+		break;
+ 
+		case 'Fri':
+			$hari_ini = "JUMAT";
+		break;
+ 
+		case 'Sat':
+			$hari_ini = "SABTU";
+		break;
+		
+		default:
+			$hari_ini = "Tidak di ketahui";		
+		break;
+	}
+ 
+	return "" . $hari_ini . "-";
+ 
+}
 ?>
